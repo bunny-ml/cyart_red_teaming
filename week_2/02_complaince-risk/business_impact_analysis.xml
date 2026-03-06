@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BIA_Report>
+    <CriticalProcess name="Payment Processing">
+        <Priority>Critical</Priority>
+        <RTO>4 Hours</RTO> <RPO>1 Hour</RPO>  <Impacts>
+            <Financial>High</Financial>
+            <Reputational>Severe</Reputational>
+            <Legal>Non-compliance with PCI-DSS</Legal>
+        </Impacts>
+        <Dependencies>
+            <System>SQL Server 01</System>
+            <System>Internal API Gateway</System>
+        </Dependencies>
+    </CriticalProcess>
+</BIA_Report>
